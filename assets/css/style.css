@@ -3,7 +3,7 @@
 
 
 * {
-	pading: 0;
+	padding: 0;
 	margin: 0;
 	font-family: "Lato", sans-serif;
 	position: relative;
@@ -93,7 +93,7 @@
 	display: flex;
 	background-color: #8663df;
 	cursor: default;
-	padding: 1.25em .5em;
+	padding: 1.25em 12.5em;
 }
 
 	#header > .title {
@@ -109,7 +109,7 @@
 		-webkit-flex: 1;
 		-ms-flex: 1;
 		flex: 1;
-		text-align: right;
+		text-align: left;
 	}
 
 		#header > nav > ul {
