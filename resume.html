@@ -1,11 +1,73 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
-<link href='assets/css/resume.css' rel='stylesheet' type='text/css'>
-<link rel="icon" href="images/dog.png">
-
+  <link href='assets/css/resume.css' rel='stylesheet' type='text/css'>
+  <link rel="icon" href="images/dog.png">
+  <style>
+    .resume-entry {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: .5em;
+    }
+    .resume-entry_experience {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: .5em;
+      margin-bottom: .5em;
+    }
+    .resume-left {
+      width: 100%;
+    }
+    .resume-right {
+      width: 25%;
+      text-align: right;
+      font-style: italic;
+      color: #666;
+    }
+    ul {
+      margin: 0;
+    }
+    ul li {
+      margin-bottom: 0.1em;
+    }
+    section:nth-of-type(3) .resume-entry,
+    section:nth-of-type(6) ul {
+      margin-bottom: 0;
+    }
+    section:nth-of-type(6) ul li {
+      margin-bottom: 0;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+    nav ul li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+    }
+    @media screen and (max-width: 768px) {
+      .resume-entry,
+      .resume-entry_experience {
+        flex-direction: column;
+      }
+      .resume-left,
+      .resume-right {
+        width: 100%;
+        text-align: left;
+      }
+      .resume-right {
+        margin-top: 0.5em;
+      }
+    }
+  </style>
 </head>
-
 <body>
 <div class="wrapper clearfix">
   <div class="left">
@@ -18,71 +80,129 @@
         </ul>
       </nav>
     </header>
-    
     <div class="name-hero">
-
       <div class="me-img"></div>
-
       <div class="name-text">
-
-        <h1><a href ="index.html"> Albert <em> Olea</em></a></h1>
-        <p>831 N May St Chicago, IL 60642</p>
-        <p>albert.olea@mapscorps.org</p>
+        <h1><a href="index.html">Alberto Olea</a></h1>
+        <p>Chicago, IL</p>
+        <p>albert.olea@northwestern.edu</p>
         <p>(224) 523-0633</p>
         <p><a href="https://www.linkedin.com/in/albert-olea/">LinkedIn</a></p>
-        
+        <p><a href="Resume_Alberto_Olea.pdf" download>Download PDF Resume</a></p>
       </div>
-
     </div>
-
   </div>
   <div class="right">
-
     <div class="inner">
-        <section>
-        <h1>Employment</h1>
-        <p>Spring 2023 - Present | <em>Northwestern University School of Education & Social Policy | Research Data Scientist</em></p>
-        <p>Opportunity research in underresourced communities in South Side of Chicago. Serving in <a href= https://en.wikipedia.org/wiki/Nichole_Pinkard> Nichole Pinkard</a> Lab under the Office of Community Engagement .</p>
-        <p>Fall 2021 - Spring 2023 | <em>MAPSCorps | Data & Technology Manager</em></p>
-        <p>Non-profit startup founded by <a href = https://en.wikipedia.org/wiki/Stacy_Tessler_Lindau> Stacy Lindau </a> focused on asset based community advocacy for underresourced parts of the city of Chicago. Youth focused programming focused on STEM and Data Science.</p>
-        <p>Fall 2019 - Fall 2020 | <em>Erie Family Health Centers | Process Improvement Engineer</em></p>
-        <p>Healthcare Centers believing healthcare is a Human Right and providing high quality patient care for underresourced areas of Chicago. </p>
-        <p>Winter 2022 - Summer 2022 | <em>William Blair | Investment Banking Analyst</em></p>
+      <section>
+        <h1>Professional Experience</h1>
+
+        <div class="resume-entry_experience">
+          <div class="resume-left">
+            <p><strong><a href="https://www.digitalyouthnetwork.org/" target="_blank">DYN Lab - Northwestern School of Education & Social Policy</a></strong><br><em>Research Analyst / Product Manager</em></p>
+            <ul>
+              <li>Led development of geo-based activity data systems to analyze youth informal learning spaces.
+              Integrated out-of-school scholarship tools into CitiesLearn ed-tech platform.
+              Built data pipelines, SQL queries, and interactive tools (GIS maps, Tableau dashboards).</li>
+            </ul>
+          </div>
+          <div class="resume-right">Mar 2023 – 2025</div>
+        </div>
+
+        <div class="resume-entry_experience">
+          <div class="resume-left">
+            <p><strong><a href="https://www.mapscorps.org/" target="_blank">MAPSCorps</a></strong><br><em>Data & Technology Manager</em></p>
+            <ul>
+              <li>Created geospatial policy proposals using custom data tools for U.S. cities and communities.
+              Directed data collection for Chicago Community Trust and the Mayor’s Office.
+              Managed 30+ analytics staff and developed a data science curriculum for underserved youth.</li>
+            </ul>
+          </div>
+          <div class="resume-right">Sep 2021 – 2023</div>
+        </div>
+
+        <div class="resume-entry_experience">
+          <div class="resume-left">
+            <p><strong><a href="https://www.williamblair.com/" target="_blank">William Blair</a></strong><br><em>IT Investment Banking Analyst</em></p>
+            <ul>
+              <li>Analyzed M&A data using Python for founder-led transaction insights and pitch creation tools.
+              Connected Salesforce CRM to Python-powered pitchbook generation via python-pptx.</li>
+            </ul>
+          </div>
+          <div class="resume-right">Jan 2022 – Jun</div>
+        </div>
+
+        <div class="resume-entry_experience">
+          <div class="resume-left">
+            <p><strong><a href="https://www.eriefamilyhealth.org/" target="_blank">Erie Family Health Centers</a></strong><br><em>Process Improvement Engineer</em></p>
+          </div>
+          <div class="resume-right">Sep 2019 – 2021</div>
+        </div>
+
+        <div class="resume-entry_experience">
+          <div class="resume-left">
+            <p><strong><a href="https://www.lyricopera.org/" target="_blank">Lyric Opera of Chicago</a></strong><br><em>Data Analytics Intern</em></p>
+          </div>
+          <div class="resume-right">Summer 2018</div>
+        </div>
       </section>
+
       <section>
         <h1>Education</h1>
-        <p>Fall 2022 - Present | <em>Massachussets Institute of Technology | MS Statistics & Data Science</em></p>
-        <p>Fall 2015 - Spring 2019 | <em>University of Illinois at Chicago | BS Industrial Engineering</em></p>
-        <p>Fall 2014 - Spring 2015 | <em>Elgin Community College | AS Engineering</em></p>
+
+        <div class="resume-entry">
+          <div class="resume-left">
+            <p><strong>Northwestern University</strong><br>Master of Science in Data Science | GPA: 3.96</p>
+          </div>
+          <div class="resume-right">Sep 2024 – Present</div>
+        </div>
+
+        <div class="resume-entry">
+          <div class="resume-left">
+            <p><strong>University of Illinois at Chicago</strong><br>Bachelor of Science in Industrial Engineering</p>
+          </div>
+          <div class="resume-right">May 2019</div>
+        </div>
+
+        <div class="resume-entry">
+          <div class="resume-left">
+            <p><strong>Elgin Community College</strong><br>Associate of Science in Engineering</p>
+          </div>
+          <div class="resume-right">Aug 2015</div>
+        </div>
       </section>
-      <section>
-        <h1>Volunteering & Fellowship </h1>
-        <p>Class of 2023 Fellow | <em> <a href = https://www.chicagounitedforequity.org/ >Chicago United for Equity </a> | Current </em></p>
-        <p>Data Scientist | <em> <a href = https://www.bluebonnetdata.org >BlueBonnet Data </a> | Current </em></p>
-        <p>Data Analyst | <em><a href = https://www.techforcampaigns.org> Tech for Campaigns</a> | Past </em></p>
-        <p>Data Assistant <em><a href = https://voices.uchicago.edu/bermanlab> Environmental Neuroscience Lab University of Chicago </a> | Past </em></p>
+
+          <section>
+        <h1>Leadership & Volunteer Experience</h1>
+        <ul>
+          <li>Bluebonnet Data – Data Science Fellow </li>
+          <li>Tech for Campaigns – Data Analyst Volunteer </li>
+          <li>Environmental Neuroscience Lab, University of Chicago – Data Assistant </li>
+          <li>Lions of Illinois Eye Research Institute – Junior Data Scientist </li>
+          <li>Dean’s List, Phi Theta Kappa Honor Society, Academic All-America, Student-Athlete</li>
+          <li>Founder & President – Engineers Without Borders, UIC Chapter</li>
+          <li>Midwestern Regional Rep – Institute of Industrial & Systems Engineers</li>
+          <li>Recruitment Chair – Sigma Alpha Mu Fraternity</li>
+        </ul>
       </section>
+
       <section>
         <h1>Technical Skills</h1>
         <ul class="skill-set">
-          <li>Data Science</li>
-          <li>Python</li>
-          <li>SQL</li>
-          <li>Excel</li>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>R</li>
+          <li>Python (scikit-learn, pandas, numpy, matplotlib)</li>
+          <li>R, SQL, Postgres, Excel</li>
+          <li>JavaScript, HTML5, CSS3</li>
+          <li>GIS Tools, Tableau, Docker, Figma</li>
+          <li>API Integration, OOP, JSON/GeoJSON</li>
         </ul>
       </section>
       <section>
         <div class="handmade">
-          <p>made with love by <em> Albert Olea</em></p>
+          <p>made by <em>Alberto Olea</em></p>
         </div>
       </section>
     </div>
-
   </div>
-
 </div>
 </body>
 </html>
